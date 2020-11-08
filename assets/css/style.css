@@ -1,0 +1,194 @@
+/* This is your style.css file. Edit as needed to match web app style and theme. */
+
+body {
+  background: white;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  animation: fadeInAnimation ease 3s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+        background-color: #b7f7f3;
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+  .typewriter h1 {
+    color: black;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+   /*border-right: .15em solid black; The typwriter cursor */
+    white-space: nowrap; /*Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    min-height: 100%; 
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+
+  h1 {
+    padding-top: 20%;
+  }
+
+  h2, h3, h4, h5, p, ul{
+    color: #333;
+  }
+
+  h2, h3, h4{
+    font-family: monospace;
+  }
+
+  .row{
+    background-color: white;
+  }
+
+  .carousel-caption{
+    font-family: monospace;
+    color: black;
+    font-size: 1.5em;
+  }
+
+  .d-block{
+    opacity: 0.35;
+  }
+
+  .img-responsive{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+
+  .bio-image{
+    margin: 0 auto 3em;
+  }
+
+  .container{
+    margin-top: 6em; 
+  }
+
+  .bio{
+    font-size: 1.25em;
+  }
+
+  p, ul{
+    font-family: monospace;
+  }
+
+  .click-resume{
+    font-size: 1.25em; 
+  }
+
+  ul {
+    list-style-type: none;
+    list-style: none;
+    display: block;
+    font-size: 1.25em;
+    }
+
+  li{
+    list-style-type: none;
+    text-align: center;
+    display: list-item;
+    margin: 0 0 0 -2.5em;
+  }
+
+  .lc{
+    font-size: .81em;
+  }
+
+  .fa-envelope, .fa-github, .fa-linkedin-in{
+    font-size: 2em;
+  }
+
+  .fa-file-pdf{
+    font-size: 4em;
+  }
+
+ .connect{
+   display: inline;
+   margin: 0 1.5em 0 1.5em;
+ }
+
+ .icons{
+   padding-left: 0; 
+  
+ }
+  .copyright{
+    color: grey;
+    font-family: monospace;
+  }
+
+  /* unvisited link */
+a:link {
+  color: #333;
+}
+
+/* visited link */
+a:visited {
+  color: #333;
+}
+
+/* mouse over link */
+a:hover {
+  color: #4baaa5;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #23504e;
+}
+
+header, footer{
+  width: 100%;
+}
+
+.footer {
+  background-color: #f8f9fa;
+}
+
+header{
+  font-family: monospace;
+}
+
+.navbar-nav:hover .nav-link:hover {
+  color: #4baaa5;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  /* display: flex!important;  */
+  justify-content: space-around;
+  /* flex-basis: auto;  */
+  } 
+
+.nav-link{
+margin: 0px 35px;
+}
